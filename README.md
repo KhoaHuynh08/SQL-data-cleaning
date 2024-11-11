@@ -23,3 +23,11 @@ select * from club_member_info cmi limit 10;
 UPDATE club_member_info_cleaned 
 SET full_name = UPPER(LTRIM(RTRIM(full_name)))
 ```
+
+#### Set 'Null' value to matial_status column LIKE ''
+
+```sql
+UPDATE club_member_info_cleaned
+SET martial_status = 'Null' 
+WHERE martial_status LIKE ''
+```
