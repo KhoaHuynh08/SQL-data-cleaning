@@ -24,7 +24,7 @@ UPDATE club_member_info_cleaned
 SET full_name = UPPER(LTRIM(RTRIM(full_name)))
 ```
 
-#### Set 'Null' value to matial_status column LIKE ''
+#### Set 'Null' value to martial_status column LIKE ''
 
 ```sql
 UPDATE club_member_info_cleaned
